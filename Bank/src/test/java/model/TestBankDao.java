@@ -17,8 +17,8 @@ public class TestBankDao {
 		bankac.setType("current");
 		//adding a new customer
 		BankAc bankacnewcustomer = new BankAc();
-		bankacnewcustomer.setAcNo("459090");
-		bankacnewcustomer.setName("Ravi`");
+		bankacnewcustomer.setAcNo("459091");
+		bankacnewcustomer.setName("Rahul");
 		bankacnewcustomer.setType("savings");
 		
 		BankDao bankdao=new BankDao();
@@ -29,7 +29,7 @@ public class TestBankDao {
 		
 		List<BankAc> arrbankac=bankdao.findAll();
 		
-		Iterator ii=arrbankac.iterator();
+		Iterator<BankAc> ii=arrbankac.iterator();
 		
 		while(ii.hasNext())
 		{
